@@ -35,7 +35,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh '''
-                    if find . -path ./node_modules -prune -o -type f \( -name "*.test.*" -o -name "*.spec.*" \) -print | grep -q .; then
+                    if find . -path ./node_modules -prune -o -type f \\( -name "*.test.*" -o -name "*.spec.*" \\) -print | grep -q .; then
                         bun test
                     else
                         echo "No test files found, skipping tests."
