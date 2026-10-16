@@ -5,6 +5,7 @@ To install dependencies:
 ```bash
 bun install
 ```
+## Dev
 
 To start a development server:
 
